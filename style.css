@@ -1,0 +1,133 @@
+* {
+    margin: 0em;
+    padding: 0em;
+    font-size: 100%;
+    border-style: none;
+    list-style-type: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+  }
+
+.panel {
+    margin: 25px;
+    width: 100%;
+    max-width: 960px; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+
+#car {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+    padding: 45px;
+    
+    
+
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 45px;
+    
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%); 
+    border-radius: 0 0 10px 10px;
+    padding: 45px;
+    
+}
+
+h2 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3em;
+    margin: 20px 0
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400; 
+    line-height: 1.75; 
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+button {
+    border-radius: 40px;
+    margin-top: 50px;
+    font-weight: 400;
+    padding: 13px 30px;
+    transition: background-color 200ms ease-in-out;
+    
+}
+
+#car button {
+    color:hsl(31, 77%, 52%);
+    margin-top: 20px;
+    border: 2px solid hsl(31, 77%, 52%);
+}
+
+#car button:hover {
+    color:hsl(0, 0%, 95%);
+    background-color:hsl(31, 77%, 52%);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+#suv button {
+    color:hsl(184, 100%, 22%);
+    margin-top: 20px;
+    border: 2px solid hsl(184, 100%, 22%)
+}
+
+#suv button:hover {
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury button {
+    color:hsl(179, 100%, 13%);
+    margin-top: 20px;
+    border: 2px solid hsl(179, 100%, 13%);
+}
+
+#luxury button:hover {
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color:hsl(179, 100%, 13%);
+}
+
+@media (min-width: 960px){
+    .panel {
+        flex-direction: row;
+    }
+
+    #car {
+        border-radius: 10px 0 0 10px;
+    }
+
+    #luxury {
+        border-radius: 0 10px 10px 0;
+    }
+}
